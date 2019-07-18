@@ -1,0 +1,2 @@
+defmodule MockingAreas do
+end
