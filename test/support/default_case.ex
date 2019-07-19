@@ -3,12 +3,12 @@ defmodule DefaultCase do
 
   using do
     quote do
-      import MockingAreas.AreaAccess
+      use MockingAreas.AreaAccess, :all
     end
   end
 
   setup do
-    MockingAreas.AreaAccess.install_stubs()
+    MockingAreas.AreaAccess.install_mox_stubs()
     :ok
   end
 end

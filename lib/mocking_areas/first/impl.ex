@@ -1,7 +1,9 @@
 defmodule MockingAreas.First.Impl do
   @behaviour MockingAreas.First
 
-  import MockingAreas.AreaAccess
+  use MockingAreas.AreaAccess, [
+    MockingAreas.Second
+  ]
 
   def some do
     other_result = impl(MockingAreas.Second).other()
