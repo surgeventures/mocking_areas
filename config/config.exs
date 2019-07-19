@@ -1,4 +1,10 @@
 import Config
 
-config :mocking_areas, MockingAreas.AreaAccess,
-  mocking_enabled: Mix.env() == :test
+config :modular,
+  area_mocking_enabled: Mix.env() == :test,
+  areas: [
+    MockingAreas.First,
+    MockingAreas.Second,
+    MockingAreas.Third,
+    OtherApp.Fourth
+  ]

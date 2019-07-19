@@ -20,6 +20,7 @@ defmodule MockingAreas.MixProject do
 
   defp deps do
     [
+      {:modular, "~> 0.2.0"},
       {:mox, ">= 0.0.0", only: :test}
     ]
   end

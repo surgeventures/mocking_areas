@@ -1,7 +1,7 @@
 defmodule MockingAreas.First.Impl do
   @behaviour MockingAreas.First
 
-  use MockingAreas.AreaAccess, [
+  use Modular.AreaAccess, [
     MockingAreas.Second
   ]
 

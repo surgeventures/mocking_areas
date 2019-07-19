@@ -1,1 +1,1 @@
-MockingAreas.AreaAccess.define_mox_mocks()
+Modular.AreaAccess.define_mox_mocks()
